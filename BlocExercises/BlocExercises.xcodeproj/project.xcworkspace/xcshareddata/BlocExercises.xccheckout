@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>49A2D3B1-3957-4E90-9D22-5D384606E8DE</string>
+	<string>28C5EF96-B9D3-4A7A-9DA6-203DA672B100</string>
 	<key>IDESourceControlProjectName</key>
 	<string>BlocExercises</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>2675EB63-839C-4B4C-9DAB-489549E9FECD</key>
-		<string>https://github.com/Bloc/ios-exercises.git</string>
+		<key>CC440205-7212-48B6-AC29-7D449694EE32</key>
+		<string>ssh://github.com/michaelwboyce/ios-exercises.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>BlocExercises/BlocExercises.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>2675EB63-839C-4B4C-9DAB-489549E9FECD</key>
+		<key>CC440205-7212-48B6-AC29-7D449694EE32</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/Bloc/ios-exercises.git</string>
+	<string>ssh://github.com/michaelwboyce/ios-exercises.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>2675EB63-839C-4B4C-9DAB-489549E9FECD</string>
+	<string>CC440205-7212-48B6-AC29-7D449694EE32</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>2675EB63-839C-4B4C-9DAB-489549E9FECD</string>
+			<string>CC440205-7212-48B6-AC29-7D449694EE32</string>
 			<key>IDESourceControlWCCName</key>
 			<string>ios-exercises</string>
 		</dict>
