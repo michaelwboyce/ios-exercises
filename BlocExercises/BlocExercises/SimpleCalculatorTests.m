@@ -47,7 +47,7 @@
     XCTAssertEqual(remainder, 0, @"15 is evenly divisible by 5, so the remainder should be 0.");
     
     NSInteger divisor2 = 4;
-    NSInteger remainder2 = remainder%divisor2;
+    NSInteger remainder2 = dividend%divisor2;
     
     XCTAssertEqual(remainder2, 3, @"15 is not evenly divisible by 4; the remainder should be 3.");
 }
