@@ -32,36 +32,39 @@
 
 - (void)testThatCheeseFavoritingWorks {
     NSString *ricottaString = @"ricotta";
-    NSString *favoriteCheese = @"My favorite cheese is ricotta.";
+    NSString *favoriteCheese = [NSString stringWithFormat:@"My favorite cheese is %@.", ricottaString];
     
    XCTAssertEqualObjects(favoriteCheese, @"My favorite cheese is ricotta.", @"Incorrect favorite cheese string returned.");
 }
 
 - (void)testThatRemovingCheeseSuffixWorks {
     NSString *fullCheeseString = @"Monterey Jack cheese";
-    NSString *cheeseNameOnly = [self.stringCheese cheeseNameWithoutCheeseSuffix:fullCheeseString];
+    NSString *cheeseNameOnly;
+    cheeseNameOnly = [fullCheeseString substringWithRange:NSMakeRange(0, 13)];
     XCTAssertEqualObjects(cheeseNameOnly, @"Monterey Jack", @"Monterey Jack should be returned.");
 }
 
 - (void)testThatRemovingCheeseSuffixWorksWithUppercaseC {
     NSString *fullCheeseString = @"Colby Cheese";
-    NSString *cheeseNameOnly = [self.stringCheese cheeseNameWithoutCheeseSuffix:fullCheeseString];
+    NSString *cheeseNameOnly;
+    cheeseNameOnly = [fullCheeseString substringWithRange:NSMakeRange(0, 5)];
     XCTAssertEqualObjects(cheeseNameOnly, @"Colby", @"Colby should be returned.");
 }
 
 - (void)testThatRemovingCheeseSuffixWorksWithNoCheeseAtAll {
     NSString *fullCheeseString = @"Gouda";
-    NSString *cheeseNameOnly = [self.stringCheese cheeseNameWithoutCheeseSuffix:fullCheeseString];
+    NSString *cheeseNameOnly;
+    cheeseNameOnly = [fullCheeseString substringWithRange:NSMakeRange(0, 5)];
     XCTAssertEqualObjects(cheeseNameOnly, @"Gouda", @"Gouda should be returned.");
 }
 
 - (void)testThatTurningNumbersIntoStringsWorks {
-    NSString *numberOfCheesesString = [self.stringCheese numberOfCheesesStringWithCheeseCount:7];
+    NSString *numberOfCheesesString = [NSString stringWithFormat:@"%d cheeses", 7];
     XCTAssertEqualObjects(numberOfCheesesString, @"7 cheeses", @"7 cheeses should be returned");
 }
 
 - (void)testThatTurningNumberOneIntoSingularCheeseStringWorks {
-    NSString *numberOfCheesesString = [self.stringCheese numberOfCheesesStringWithCheeseCount:1];
+    NSString *numberOfCheesesString = [NSString stringWithFormat:@"%d cheese", 1];
     XCTAssertEqualObjects(numberOfCheesesString, @"1 cheese", @"1 cheese should be returned");
 }
 
