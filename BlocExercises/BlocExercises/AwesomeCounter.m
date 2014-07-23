@@ -13,10 +13,13 @@
 - (NSString *) stringWithNumbersBetweenNumber:(NSInteger)number andOtherNumber: (NSInteger)otherNumber {
     NSInteger lowNumber;
     NSInteger highNumber;
-    while (lowNumber < highNumber)
-    {NSLog(@"%ld", (long) lowNumber);
-        lowNumber = lowNumber + 1;}
-    return @"";
+    NSString *mystring = [NSString string];
+    while (lowNumber < highNumber){
+        lowNumber = lowNumber + 1;
+        mystring = [NSString stringWithFormat: @"%i", lowNumber];
+    
+    }
+    return mystring;
 }
 
 @end
